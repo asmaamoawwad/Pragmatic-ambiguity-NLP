@@ -67,8 +67,3 @@ The findings emphasize the importance of integrating linguistic theory into NLP 
 
 ---
 
-## Author
-**Asmaa Moawwad**  
-Concordia University  
-Linguistics & Natural Language Processing  
-Deep Learning Indaba X Egypt

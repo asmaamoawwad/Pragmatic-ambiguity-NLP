@@ -61,7 +61,6 @@ The findings emphasize the importance of integrating linguistic theory into NLP 
 
 ## Technologies Used
 - Python
-- Jupyter Notebook
 - Transformer-based NLP models (BERT)
 - Linguistic qualitative analysis
 

@@ -14,7 +14,9 @@ Natural Language Processing (NLP) systems have achieved remarkable success in ta
 Despite strong performance on syntax and semantics, modern NLP models consistently struggle with pragmatics.
 
 **Contextual Isolation:** Models tend to process utterances in isolation, missing the speaker intention and world knowledge that determine meaning.
+
 **The Training Paradox:** Increased training data alone does not resolve the lack of pragmatic understanding.
+
 **Real-world Impact:** Failure to bridge this gap leads to errors in sentiment analysis, content moderation, and dialogue systems.
 
 ---
@@ -28,8 +30,11 @@ The objective of this project is to evaluate standard NLP architectures through 
 Our approach follows a standard NLP pipeline adapted for linguistic analysis:
 
 - **Data & Annotation**: Curated an informal text corpus manually annotated by trained linguists to establish a **gold-standard dataset** for sarcasm and irony.
-- ** Neural Preprocessing**: Included noise reduction, tokenization into linguistic units, and transformation into numerical embeddings.
+  
+- **Neural Preprocessing**: Included noise reduction, tokenization into linguistic units, and transformation into numerical embeddings.
+  
 - **Model Training**: A pre-trained BERT transformer was fine-tuned via an 80/20 train-test split.
+  
 - **Hybrid Evaluation**: Paired quantitative metrics with a qualitative analysis of **systematic linguistic error patterns** to identify the Pragmatic Gap.
 
 ---
@@ -37,7 +42,9 @@ Our approach follows a standard NLP pipeline adapted for linguistic analysis:
 ## Results & Linguistic Analysis
 The fine-tuned transformer achieved **84% accuracy**. However, an **Accuracy Cascade** analysis reveals a significant performance drop-off at high complexity.
 **The "Literal Cluster" Error:** Errors are dominated by false negatives in sarcasm detection.Surface-Level 
+
 **Reliance:** The model maps sarcastic utterances into literal clusters based on surface-level signals (e.g., the word "Great"), failing to calculate the **Semantic Displacement Vector**.
+
 **Contextual Degradation:** Performance declines sharply when interpretation requires contextual and cultural inference.
 
 ---

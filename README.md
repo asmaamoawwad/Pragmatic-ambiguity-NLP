@@ -41,6 +41,7 @@ Our approach follows a standard NLP pipeline adapted for linguistic analysis:
 
 ## Results & Linguistic Analysis
 The fine-tuned transformer achieved **84% accuracy**. However, an **Accuracy Cascade** analysis reveals a significant performance drop-off at high complexity.
+
 **The "Literal Cluster" Error:** Errors are dominated by false negatives in sarcasm detection.Surface-Level 
 
 **Reliance:** The model maps sarcastic utterances into literal clusters based on surface-level signals (e.g., the word "Great"), failing to calculate the **Semantic Displacement Vector**.
